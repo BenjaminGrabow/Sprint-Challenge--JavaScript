@@ -15,14 +15,14 @@ const consume = (par1, par2, cb) => cb(par1, par2);
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 const add = (num1, num2) => num1 + num2;
- 
+
 const multiply = (num1, num2) => num1 * num2;
- 
+
 const greeting = (first, last) => `Hello ${first} ${last}, nice to meet you!`;
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-consume(2,2,add); // 4
-consume(10,16,multiply); // 160
-consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+consume(2, 2, add); // 4
+consume(10, 16, multiply); // 160
+consume("Mary", "Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 
 // ==== Closures ==== 
