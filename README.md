@@ -30,13 +30,29 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+the forEach() method doesn't actually return anything (undefined). It simply calls a provided function on each element in your array. This callback is allowed to mutate the calling array. The difference is that map() utilizes return values and actually returns a new Array of the same size.
+
 2. What is the difference between a function and a method?
+
+Method : A method is a piece of code that is called by a name that is associated with an object.
+Function : When no object is associated with it , it comes to function.All data that is passed to a function is explicitly passed.
 
 3. What is closure?
 
+A Closure is a feature of the Javascript language that allows nested functions, to obtain the variables created in the execution context of the enclosing function. This is the case in all examples of closures you'll find.
+
 4. Describe the four rules of the 'this' keyword.
 
+1.Window Binding: in the global scope, "this" will refer to the window object (we can use "use strict" tp prevent it).
+2.Implicit Binding: when a method is called as a property of a object then "this" refers to the parent object of that method.
+3.New Binding: when a function is called with "new" keyword it is a constrctor function. "this" refers to that newly created instance.
+4.Explicit Binding: when a function is called through the call() or apply() or bind() method we are using explicit binding. "this" refers to the value passed as first argument of call() or apply() or bind() method.
+Priority: the highest priority has new Binding. Then explicit binding and
+implicit binding. The lowest priority has default binding.
+
 5. Why do we need super() in an extended class?
+
+The super keyword is used in two ways because of the following reasons: the super keyword is used as a “function” which calls the parent class with the parameters passed to child class. This is a key step to be carried out in order to make sure that child is an instance of parent.
 
 ## Project Set up
 
